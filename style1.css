@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+}
+
+
+/*pg1 bg*/
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(121, 135, 182, 0.705), rgba(54, 54, 75, 0.637)), url(images/gehu.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*pg1 teacher login button*/
+
+.header .btn {
+    text-decoration: none;
+    text-decoration-line: none;
+    display: block;
+    position: absolute;
+    text-decoration-line: none;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 25%;
+    font-size: 200%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*pg1 student login button*/
+
+.header .btn2 {
+    text-decoration: none;
+    display: block;
+    text-decoration-line: none;
+    position: absolute;
+    text-decoration-line: none;
+    text-decoration: none;
+    font-display: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 26%;
+    height: 43px;
+    font-size: 200%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header .btn:hover,
+.btn2:hover {
+    background-color: whitesmoke;
+}
+
+.heading {
+    margin-top: 10px;
+    margin-left: 2%;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+}
+
+.header .footer {
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    top: 90%;
+    display: block;
+    background-color: rgb(77, 70, 70);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 70px;
+}
+
+.banner {
+    margin-left: none;
+    background: #e79393;
+    padding-top: 5px;
+    padding-left: 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+/*for year1,year2,year3,year4 search bar and facultylog input bar*/
+
+.yearsbutton {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 55%;
+    font-size: 150%;
+    cursor: pointer;
+    text-align: left;
+    padding: 40px;
+}
+
+
+/*for year1,year2,year3,year4 buttons on studentlog.html*/
+
+.yearbtn {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 17.5%;
+    height: 35%;
+    cursor: pointer;
+    text-align: center;
+    padding: none;
+    border-radius: none;
+    border-width: 30px black;
+}
+
+.yearbtn2 {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 17.5%;
+    height: 35%;
+    cursor: pointer;
+    text-align: center;
+    padding: none;
+    border-radius: none;
+    border-width: 30px black;
+}
+
+.yearbtn3 {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 17.5%;
+    height: 35%;
+    cursor: pointer;
+    text-align: center;
+    padding: none;
+    border-radius: none;
+    border-width: 30px black;
+}
+
+.yearbtn4 {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.466);
+    width: 17.5%;
+    height: 35%;
+    cursor: pointer;
+    text-align: center;
+    padding: none;
+    border-radius: none;
+    border-width: 30px black;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    top: 90%;
+    display: block;
+    background-color: rgb(77, 70, 70);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 70px;
+}
+
+
+/*submit button for year1,year2,year3,year4*/
+
+.submitbutton {
+    top: 90%;
+    left: 70%;
+    padding: 30px;
+}
