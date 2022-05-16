@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src=func.js></script>
     <link rel="stylesheet" href="style1.css">
 </head>
 
@@ -16,24 +17,27 @@
         <p>
             <h2>This week:</h2>
         </p>
-        <div id="tab">
+        <div class="tab">
             <table>
                 <th>
-                    <td class="data">Mon</td>
-                    <td class="data">Tue</td>
-                    <td class="data">Wed</td>
-                    <td class="data">Thurs</td>
-                    <td class="data">Fri</td>
-                    <td class="data">Sat</td>
+                    <td class="data" onclick="openForm()">Mon</td>
+                    <td class="data" onclick="openForm()">Tue</td>
+                    <td class="data" onclick="openForm()">Wed</td>
+                    <td class="data" onclick="openForm()">Thurs</td>
+                    <td class="data" onclick="openForm()">Fri</td>
+                    <td class="data" onclick="openForm()">Sat</td>
                 </th>
             </table>
         </div>
     </div>
-
-    <div class="popupForm">
-        <div id="frombut">
-            <label for="from" aria-placeholder="Select time">From</label>
-            <select id="from">
+    </div>
+    <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+            <form action="/action_page.php" class="formContainer">
+                <h2>Please enter the timings</h2>
+                <br>
+                <label for="from" aria-placeholder="Select time">From</label>
+                <select id="from">
                 <option value="9">9</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
@@ -44,10 +48,8 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
-        </div>
-        <div id="tobut">
-            <label for="to" aria-placeholder="Select time">To</label>
-            <select id="to">
+                <label for="to" aria-placeholder="Select time">To</label>
+                <select id="to">
                 <option value="10">10</option>
                 <option value="11">11</option>
                 <option value="12">12</option>
@@ -57,9 +59,11 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
-        </div>
-        <div>
-            <button type="button" class="sub">Submit</button>
+                <br>
+                <br>
+                <button type="submit" class="btn">Enter</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
         </div>
     </div>
 </body>

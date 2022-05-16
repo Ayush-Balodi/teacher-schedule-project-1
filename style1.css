@@ -282,27 +282,49 @@
     outline: none;
 }
 
-.popupForm .sub {
-    background-color: green;
-    font-size: 18px;
+.loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
-.popupForm {
+.formPopup {
     display: none;
-    background-color: white;
-    width: 35%;
-    height: 20%;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
 }
 
-.popupForm #frombut {
-    text-align: center;
+.formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
 }
 
-.popupForm #tobut {
-    text-align: center;
+.formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
 }
 
-#tab {
+.formContainer .cancel {
+    background-color: #cc0000;
+}
+
+.formContainer .btn:hover,
+.openButton:hover {
+    opacity: 1;
+}
+
+.tab {
     font-size: 150%;
     text-align: center;
     border: black;
@@ -314,7 +336,25 @@
 
 .data {
     padding: 25px;
-    border: 5px solid black;
+    border: 3px solid black;
     margin: none;
     width: 47px;
+    cursor: pointer;
+    border-collapse: collapse;
+}
+
+.data:hover {
+    background-color: #8a8b8e;
+}
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 25%;
+}
+
+.loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
