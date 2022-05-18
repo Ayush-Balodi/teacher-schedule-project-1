@@ -1,3 +1,31 @@
+<?php
+    include 'mysqlll.php';
+    $servername = "";
+    $username = "";
+    $password = "";
+    if($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        $username = $_POST['Username'];
+        $password = $_POST['Password'];
+        $row=""; 
+        $sql = "SELECT Username , Password FROM login";
+        $result = mysqli_query($conn,$sql);
+        if(mysqli_num_rows($result) > 0) 
+        {
+            while($row = mysqli_fetch_assoc($result)) 
+            {
+              if($row["Username"]==$username && $row["Password"]==$password)
+              {
+                header('Location: ./newpage2.html');
+                exit;
+              }
+            }
+            echo "Incorrect credentials";
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -12,17 +40,17 @@
 
 <body class="header">
     <div class="banner">
-        <a href="page2.html" title="Home"> <img src="images/finalogo.png" width="30%"> </a>
+        <a href="newpage2.html" title="Home"> <img src="images/finalogo.png" width="30%"> </a>
     </div>
-    <form>
+    <form method="POST">
         <div class="loginbutton">
             <h2>Login</h2>
             <div>
-                <input type="text" placeholder="UserName" style="margin:5px;font-size: 12px; width: 85%; height: 18px; padding:4px;" required>
+                <input type="text" name="Username" placeholder="UserName" style="margin:5px;font-size: 12px; width: 85%; height: 18px; padding:4px;" required>
             </div>
             <br>
             <div>
-                <input type="password" placeholder="Password" style="font-size: 12px; width: 85%; height: 18px;padding:4px;" required>
+                <input type="password" name="Password" placeholder="Password" style="font-size: 12px; width: 85%; height: 18px;padding:4px;" required>
             </div>
             <br>
             <div>
