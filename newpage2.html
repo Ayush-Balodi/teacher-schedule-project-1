@@ -33,7 +33,7 @@
     </div>
     <div class="loginPopup">
         <div class="formPopup" id="popupForm">
-            <form action="/action_page.php" class="formContainer">
+            <form action="action_page.php" class="formContainer" method="post">
                 <h2>Please enter the timings</h2>
                 <br>
                 <label for="from" aria-placeholder="Select time">From</label>
@@ -61,7 +61,7 @@
             </select>
                 <br>
                 <br>
-                <button type="submit" class="btn">Enter</button>
+                <input type="submit" class="btn" placeholder="Enter">
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
