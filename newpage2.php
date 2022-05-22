@@ -1,3 +1,34 @@
+<?php
+    include 'action_page.php';
+    $servername = "";
+    $name = "";
+    $starting_time = "";
+    $ending_time = "";
+    $day = "";
+    if($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        $name = $_POST['Name'];
+        $starting_time = $_POST['Starting_time'];
+        $ending_time = $_POST['Ending_time'];
+        $day = $_POST['Day'];
+        $row=""; 
+        $sql = "SELECT Username , Password FROM _login_details";
+        $result = mysqli_query($conn,$sql);
+        if(mysqli_num_rows($result) > 0) 
+        {
+            while($row = mysqli_fetch_assoc($result)) 
+            {
+              if($row["Username"]==$username && $row["Password"]==$password)
+              {
+                header('Location: ./newpage2.html');
+                exit;
+              }
+            }
+            echo "Incorrect credentials";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 

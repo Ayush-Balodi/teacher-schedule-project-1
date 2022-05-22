@@ -8,7 +8,7 @@
         $username = $_POST['Username'];
         $password = $_POST['Password'];
         $row=""; 
-        $sql = "SELECT Username , Password FROM login";
+        $sql = "SELECT Username , Password FROM _login_details";
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result) > 0) 
         {

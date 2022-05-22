@@ -1,5 +1,5 @@
 <?php
-    //comection
+    //connection
     $servername = "localhost";
     $username = "root";
     $password = "";
