@@ -1,30 +1,7 @@
 <?php
     include 'mysqlll.php';
-    $servername = "";
-    $username = "";
-    $password = "";
-    if($_SERVER["REQUEST_METHOD"] == "POST")
-    {
-        $username = $_POST['Username'];
-        $password = $_POST['Password'];
-        $row=""; 
-        $sql = "SELECT Username , Password FROM login";
-        $result = mysqli_query($conn,$sql);
-        if(mysqli_num_rows($result) > 0) 
-        {
-            while($row = mysqli_fetch_assoc($result)) 
-            {
-              if($row["Username"]==$username && $row["Password"]==$password)
-              {
-                header('Location: ./newpage2.html');
-                exit;
-              }
-            }
-            echo "Incorrect credentials";
-        }
-    }
+    include 'teacher.php';
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -54,7 +31,7 @@
             </div>
             <br>
             <div>
-                <a href="newpage2.html"><input type="submit" value="LOGIN" class="subbutton"></a>
+                <a href="newpage2.php"><input type="submit" name="btn1" id='btn1' value="Submit" class="subbutton"></a>
             </div>
             <br>
             <br>

@@ -296,6 +296,8 @@
     transform: translate(-50%, 5%);
     border: 3px solid #999999;
     z-index: 9;
+    left: 50%;
+    top: 35%;
 }
 
 .formContainer {
