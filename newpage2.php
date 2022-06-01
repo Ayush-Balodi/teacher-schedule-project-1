@@ -1,16 +1,16 @@
 <?php
-    // include 'action_page.php';
-    // $servername = "";
-    $name = "";
-    // $starting_time = "";
-    // $ending_time = "";
-    // $day = "";
-
-    include 'mysqlll.php';
     
-    $username = $_POST['btn1'];
-    $id = "";
+    include 'mysqlll.php';
+
+    $name = "";
+    $starting_time = "";
+    $ending_time = "";
+    $day = $_COOKIE["Id"];
+
+    $username = $_COOKIE["Username"];
     $row = ""; 
+    $id = "";
+
     $sql = "SELECT Username , Name FROM _user_to_name";
     $result = mysqli_query($conn,$sql);
 
@@ -20,32 +20,29 @@
         {
           if($row["Username"]==$username)
           {
-            $id = $row["ID"];
             $name = $row["Name"];
-            echo "Success! Name => ".$name." ID => ".$id;
-            break;
           }
         }
     }
 
-    // if($_SERVER["REQUEST_METHOD"] == "POST")
-    // {
-    //     $starting_time = $_POST['Starting_time'];
-    //     $ending_time = $_POST['Ending_time'];
-    //     $day = $_POST['Day'];
-    //     //$row=""; 
-    //     $sql = "INSERT INTO _teacher_slot (`ID`, `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$id' , '$name' , '$starting_time' , '$ending_time' , $day)";
+    echo"Username => ".$uername." Id => ".$id;
+
+    if($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        $starting_time = $_POST['Starting_time'];
+        $ending_time = $_POST['Ending_time'];
+        $day = $_POST['Day'];
+        //$row=""; 
+        $sql = "INSERT INTO _teacher_slot (`ID`, `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$id' , '$name' , '$starting_time' , '$ending_time' , '$day')";
         
-    //     $result = mysqli_query($conn,$sql);
-        
-    //     if(mysqli_num_rows($result)) 
-    //     {
-    //         echo "Details added to the database successfully.";
-    //     }
-    //     else{
-    //         die("Addition unsuccessful.".mysqli_error($conn));
-    //     }
-    // }
+        if($conn->query($sql) === TRUE ) 
+        {
+            echo "Details added to the database successfully.";
+        }
+        else{
+            die("Addition unsuccessful.".mysqli_error($conn));
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -83,7 +80,7 @@
     </div>
     <div class="loginPopup">
         <div class="formPopup" id="popupForm">
-            <form action="action_page.php" class="formContainer" method="post">
+            <form class="formContainer" method="post">
                 <h2>Please enter the timings</h2>
                 <br>
                 <label for="Starting_name" aria-placeholder="Select time">From</label>
