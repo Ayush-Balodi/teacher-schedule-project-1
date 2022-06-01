@@ -46,6 +46,14 @@
     //         die("Addition unsuccessful.".mysqli_error($conn));
     //     }
     // }
+    if($conn->query($sql) === TRUE ) 
+        {
+            echo "Details added to the database successfully.";
+        }
+        else{
+            die("Addition unsuccessful.".mysqli_error($conn));
+        }
+    }
 
 ?>
 
