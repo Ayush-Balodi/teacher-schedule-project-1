@@ -226,26 +226,47 @@
     -ms-transform: translate(-50%, -50%);
     background-color: white;
     width: 25%;
-    height: 35%;
+    height: 45%;
     font-size: 125%;
     text-align: center;
     padding: 20px;
+    border-radius: 8px;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    background-color: white;
+    font-size: small;
 }
 
 #rememberme {
+    display: flex;
     color: #8a8b8e;
     float: left;
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 12px;
     cursor: pointer;
+    padding-right: 8px;
 }
 
 #forgotpassword {
-    margin-top: 3px;
-    margin-right: 17px;
+    display: flex;
+    padding-right: 17px;
     float: right;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
+}
+
+.signup {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #b3b3b4;
+    padding: 12px;
+    font-size: small;
+    width: 100%;
 }
 
 .subbutton {
@@ -292,7 +313,7 @@
     display: none;
     position: fixed;
     left: 45%;
-    top: 5%;
+    top: 2.5%;
     transform: translate(-50%, 5%);
     border: 3px solid #999999;
     z-index: 9;
@@ -326,37 +347,79 @@
     opacity: 1;
 }
 
-.tab {
-    font-size: 150%;
-    text-align: center;
-    border: black;
-    border-width: 20px;
-    top: 50%;
-    left: 50%;
+table,
+td {
+    font-size: 11mm;
+    width: 800px;
+    margin: auto;
     padding: 20px;
-}
-
-.data {
-    padding: 25px;
+    text-align: center;
     border: 3px solid black;
-    margin: none;
-    width: 47px;
-    cursor: pointer;
     border-collapse: collapse;
+    cursor: pointer;
+    width: 90px;
+    background-color: whitesmoke;
 }
 
-.data:hover {
-    background-color: #8a8b8e;
+td:hover {
+    background-color: #6ba7a7;
 }
 
 .table {
     width: 80%;
-    border-collapse: collapse;
-    margin-left: 25%;
 }
 
 .loginPopup {
     position: relative;
     text-align: center;
     width: 100%;
+}
+
+#sched {
+    padding-right: 30px;
+    text-align: center;
+}
+
+.tab {
+    text-align: center;
+    background-color: #D6EEEE;
+    border-color: 5px aquamarine;
+    height: 55%;
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-top: 30px;
+}
+
+.mdpg {
+    background-color: rgb(77, 77, 255);
+    display: block;
+    text-align: left;
+    position: absolute;
+    right: 0%;
+    width: 16%;
+    height: 25%;
+}
+
+.mod {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding-left: 18px;
+    padding-top: 45px;
 }

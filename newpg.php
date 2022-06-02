@@ -2,11 +2,11 @@
     $name = "";
     $starting_time = "";
     $ending_time = "";
-    $day = $_COOKIE["Id"];
+    $day = "";
 
+    $id = $_COOKIE["ID"];
     $username = $_COOKIE["Username"];
-    $row = ""; 
-    $id = "";
+    $row = "";
 
     $sql = "SELECT Username , Name FROM _user_to_name";
     $result = mysqli_query($conn,$sql);
@@ -22,15 +22,12 @@
         }
     }
 
-    $id = $_COOKIE["ID"];
-    echo"Username => ".$username." Name => ".$name . " ID => " . $id;
-
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $starting_time = $_POST['Starting_time'];
         $ending_time = $_POST['Ending_time'];
         $day = $_POST['Day'];
-        //$row=""; 
+ 
         $sql = "INSERT INTO _teacher_slot (`ID`, `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$id' , '$name' , '$starting_time' , '$ending_time' , '$day')";
         
         if($conn->query($sql) === TRUE ) 
