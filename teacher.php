@@ -9,10 +9,9 @@
         $password = $_POST['Password'];
         
         setcookie("Username" , $username , time() + 2 * 24 * 60 * 60 );
-        //setcookie("ID", $id , time() + 2 * 24 * 60 * 60 );
-
+        
         $row=""; 
-        $sql = "SELECT Username , Password FROM _login_details";
+        $sql = "SELECT Username , Id , Password FROM _login_details";
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result) > 0) 
         {
@@ -20,6 +19,8 @@
             {
               if( $row["Username"]==$username && $row["Password"]==$password)
               {
+                $id = $row["Id"];
+                setcookie("ID", $id , time() + 2 * 24 * 60 * 60 );
                 header('Location: ./newpage2.php');
                 exit;
               }

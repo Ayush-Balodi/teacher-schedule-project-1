@@ -22,7 +22,8 @@
         }
     }
 
-    echo"Username => ".$uername." Id => ".$id;
+    $id = $_COOKIE["ID"];
+    echo"Username => ".$username." Name => ".$name . " ID => " . $id;
 
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {
