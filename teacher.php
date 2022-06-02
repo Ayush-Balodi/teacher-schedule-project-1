@@ -1,5 +1,4 @@
 <?php
-    $servername = "";
     $username = "";
     $password = "";
 

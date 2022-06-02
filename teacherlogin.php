@@ -43,7 +43,7 @@
                 </div>
                 <br>
                 <div class="signup">
-                    <a href="" style="color: #474747;">Sign Up</a>
+                    <a href="signup.php" style="color: #474747;">Sign Up</a>
                 </div>
             </div>
 
