@@ -1,61 +1,7 @@
 <?php
-    // include 'action_page.php';
-    // $servername = "";
-    $name = "";
-    // $starting_time = "";
-    // $ending_time = "";
-    // $day = "";
-
     include 'mysqlll.php';
-    
-    $username = $_POST['btn1'];
-    $id = "";
-    $row = ""; 
-    $sql = "SELECT Username , Name FROM _user_to_name";
-    $result = mysqli_query($conn,$sql);
-
-    if(mysqli_num_rows($result) > 0) 
-    {
-        while($row = mysqli_fetch_assoc($result)) 
-        {
-          if($row["Username"]==$username)
-          {
-            $id = $row["ID"];
-            $name = $row["Name"];
-            echo "Success! Name => ".$name." ID => ".$id;
-            break;
-          }
-        }
-    }
-
-    // if($_SERVER["REQUEST_METHOD"] == "POST")
-    // {
-    //     $starting_time = $_POST['Starting_time'];
-    //     $ending_time = $_POST['Ending_time'];
-    //     $day = $_POST['Day'];
-    //     //$row=""; 
-    //     $sql = "INSERT INTO _teacher_slot (`ID`, `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$id' , '$name' , '$starting_time' , '$ending_time' , $day)";
-        
-    //     $result = mysqli_query($conn,$sql);
-        
-    //     if(mysqli_num_rows($result)) 
-    //     {
-    //         echo "Details added to the database successfully.";
-    //     }
-    //     else{
-    //         die("Addition unsuccessful.".mysqli_error($conn));
-    //     }
-    // }
-    if($conn->query($sql) === TRUE ) 
-        {
-            echo "Details added to the database successfully.";
-        }
-        else{
-            die("Addition unsuccessful.".mysqli_error($conn));
-        }
-    }
-
 ?>
+
 
     <!DOCTYPE html>
     <html>

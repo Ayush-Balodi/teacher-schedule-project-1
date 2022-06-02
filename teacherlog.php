@@ -17,7 +17,7 @@
 
     <body class="header">
         <div class="banner">
-            <a href="newpage2.html" title="Home"> <img src="images/finalogo.png" width="30%"> </a>
+            <a href="newpage2.php" title="Home"> <img src="images/finalogo.png" width="30%"> </a>
         </div>
         <form style="background-color:white;" method="POST">
             <div class="loginbutton">
