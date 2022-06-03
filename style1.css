@@ -226,11 +226,13 @@
     -ms-transform: translate(-50%, -50%);
     background-color: white;
     width: 25%;
-    height: 45%;
+    height: 114%;
     font-size: 125%;
     text-align: center;
     padding: 20px;
     border-radius: 8px;
+    position: relative;
+    right: 17%;
 }
 
 .block {
