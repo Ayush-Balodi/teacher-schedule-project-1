@@ -21,9 +21,6 @@
                     <input type="text" name="Username" placeholder="UserName" style="margin:5px;font-size: 12px; width: 85%; height: 18px; padding:4px;" required>
                 </div>
                 <br>
-                <?php
-                    back:
-                ?>
                 <div>
                     <input type="password" name="Password" placeholder="Password" style="font-size: 12px; width: 85%; height: 18px;padding:4px;" required>
                 </div>
