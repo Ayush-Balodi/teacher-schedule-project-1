@@ -1,427 +1,411 @@
-* {
-    margin: 0;
-}
-
-
-/*pg1 bg*/
-
-.header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(121, 135, 182, 0.705), rgba(54, 54, 75, 0.637)), url(images/gehu.jpeg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-
-/*pg1 teacher login button*/
-
-.header .btn {
-    text-decoration: none;
-    text-decoration-line: none;
-    display: block;
-    position: absolute;
-    text-decoration-line: none;
-    text-decoration: none;
-    top: 50%;
-    left: 50%;
-    font-family: Arial, Helvetica, sans-serif;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.466);
-    width: 25%;
-    font-size: 200%;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    padding: auto;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-/*pg1 student login button*/
-
-.header .btn2 {
-    text-decoration: none;
-    display: block;
-    text-decoration-line: none;
-    position: absolute;
-    text-decoration-line: none;
-    text-decoration: none;
-    font-display: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.466);
-    width: 26%;
-    height: 43px;
-    font-size: 200%;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    padding: auto;
-    text-align: center;
-    text-decoration: none;
-}
-
-.header .btn:hover,
-.btn2:hover {
-    background-color: whitesmoke;
-}
-
-.header .footer {
-    text-align: center;
-    padding-top: 10px;
-    position: absolute;
-    top: 90%;
-    display: block;
-    background-color: rgb(77, 70, 70);
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 70px;
-}
-
-.banner {
-    margin-left: none;
-    padding-top: 5px;
-    padding-left: 10px;
-    position: relative;
-    text-decoration: none;
-}
-
-
-/*for year1,year2,year3,year4 search bar and facultylog input bar*/
-
-.yearsbutton {
-    text-decoration: none;
-    display: block;
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.466);
-    width: 55%;
-    font-size: 150%;
-    cursor: pointer;
-    text-align: left;
-    padding: 40px;
-}
-
-
-/*for year1,year2,year3,year4 buttons on studentlog.html*/
-
-.yearbtn {
-    text-decoration: none;
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.466);
-    width: 17.5%;
-    height: 35%;
-    cursor: pointer;
-    text-align: center;
-    padding: none;
-    border-radius: none;
-    border-width: 30px black;
-}
-
-.yearbtn2 {
-    text-decoration: none;
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.466);
-    width: 17.5%;
-    height: 35%;
-    cursor: pointer;
-    text-align: center;
-    padding: none;
-    border-radius: none;
-    border-width: 30px black;
-}
-
-.yearbtn3 {
-    text-decoration: none;
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.466);
-    width: 17.5%;
-    height: 35%;
-    cursor: pointer;
-    text-align: center;
-    padding: none;
-    border-radius: none;
-    border-width: 30px black;
-}
-
-.yearbtn4 {
-    text-decoration: none;
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.466);
-    width: 17.5%;
-    height: 35%;
-    cursor: pointer;
-    text-align: center;
-    padding: none;
-    border-radius: none;
-    border-width: 30px black;
-}
-
-.footer {
-    text-align: center;
-    padding-top: 10px;
-    position: absolute;
-    top: 90%;
-    display: block;
-    background-color: rgb(77, 70, 70);
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 70px;
-}
-
-
-/*submit button for year1,year2,year3,year4*/
-
-.submitbutton {
-    top: 90%;
-    left: 70%;
-    padding: 30px;
-}
-
-.loginbutton {
-    text-decoration: none;
-    margin: 15px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: white;
-    width: 25%;
-    height: 114%;
-    font-size: 125%;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    position: relative;
-    right: 17%;
-}
-
-.block {
-    display: block;
-    width: 100%;
-    background-color: white;
-    font-size: small;
-}
-
-#rememberme {
-    display: flex;
-    color: #8a8b8e;
-    float: left;
-    font-size: 12px;
-    cursor: pointer;
-    padding-right: 8px;
-}
-
-#forgotpassword {
-    display: flex;
-    padding-right: 17px;
-    float: right;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.signup {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background-color: #b3b3b4;
-    padding: 12px;
-    font-size: small;
-    width: 100%;
-}
-
-.subbutton {
-    margin-top: 30px;
-    margin: 5px;
-    font-size: 12px;
-    width: 88%;
-    height: 30px;
-    padding: 4px;
-    background-color: green;
-    text-align: center;
-    border-color: green;
-    color: white;
-    cursor: pointer;
-}
-
-.loginbutton #signup {
-    background-color: #eeedf1;
-    color: #8a8b8e;
-    font-size: 12px;
-    width: 110%;
-    padding: 20px 0px;
-    text-align: center;
-    cursor: pointer;
-}
-
-#username {
-    height: 20px;
-}
-
-.loginbutton input[type=text]:focus,
-.loginbutton input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-.loginPopup {
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.formPopup {
-    display: none;
-    position: fixed;
-    left: 45%;
-    top: 2.5%;
-    transform: translate(-50%, 5%);
-    border: 3px solid #999999;
-    z-index: 9;
-    left: 50%;
-    top: 35%;
-}
-
-.formContainer {
-    max-width: 300px;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.formContainer .btn {
-    padding: 12px 20px;
-    border: none;
-    background-color: #8ebf42;
-    color: #fff;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 15px;
-    opacity: 0.8;
-}
-
-.formContainer .cancel {
-    background-color: #cc0000;
-}
-
-.formContainer .btn:hover,
-.openButton:hover {
-    opacity: 1;
-}
-
-table,
-td {
-    font-size: 11mm;
-    width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    border: 3px solid black;
-    border-collapse: collapse;
-    cursor: pointer;
-    width: 90px;
-    background-color: whitesmoke;
-}
-
-td:hover {
-    background-color: #6ba7a7;
-}
-
-.table {
-    width: 80%;
-}
-
-.loginPopup {
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-#sched {
-    padding-right: 30px;
-    text-align: center;
-}
-
-.tab {
-    text-align: center;
-    background-color: #D6EEEE;
-    border-color: 5px aquamarine;
-    height: 55%;
-    width: 70%;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: underline;
-    cursor: pointer;
-    padding-top: 30px;
-}
-
-.mdpg {
-    background-color: rgb(77, 77, 255);
-    display: block;
-    text-align: left;
-    position: absolute;
-    right: 0%;
-    width: 16%;
-    height: 25%;
-}
-
-.mod {
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    padding-left: 18px;
-    padding-top: 45px;
-}
+    * {
+        margin: 0;
+    }
+    /*pg1 bg*/
+    
+    .header {
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(121, 135, 182, 0.705), rgba(54, 54, 75, 0.637)), url(images/gehu.jpeg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    /*pg1 teacher login button*/
+    
+    .header .btn {
+        text-decoration: none;
+        text-decoration-line: none;
+        display: block;
+        position: absolute;
+        text-decoration-line: none;
+        text-decoration: none;
+        top: 50%;
+        left: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 25%;
+        font-size: 200%;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        padding: auto;
+        text-align: center;
+        text-decoration: none;
+    }
+    /*pg1 student login button*/
+    
+    .header .btn2 {
+        text-decoration: none;
+        display: block;
+        text-decoration-line: none;
+        position: absolute;
+        text-decoration-line: none;
+        text-decoration: none;
+        font-display: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 26%;
+        height: 43px;
+        font-size: 200%;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        padding: auto;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .header .btn:hover,
+    .btn2:hover {
+        background-color: whitesmoke;
+    }
+    
+    .header .footer {
+        text-align: center;
+        padding-top: 10px;
+        position: absolute;
+        top: 90%;
+        display: block;
+        background-color: rgb(77, 70, 70);
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 70px;
+    }
+    
+    .banner {
+        margin-left: none;
+        padding-top: 5px;
+        padding-left: 10px;
+        position: relative;
+        text-decoration: none;
+    }
+    /*for year1,year2,year3,year4 search bar and facultylog input bar*/
+    
+    .yearsbutton {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 55%;
+        font-size: 150%;
+        cursor: pointer;
+        text-align: left;
+        padding: 40px;
+    }
+    /*for year1,year2,year3,year4 buttons on studentlog.html*/
+    
+    .yearbtn {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 55%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 17.5%;
+        height: 35%;
+        cursor: pointer;
+        text-align: center;
+        padding: none;
+        border-radius: none;
+        border-width: 30px black;
+    }
+    
+    .yearbtn2 {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 55%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 17.5%;
+        height: 35%;
+        cursor: pointer;
+        text-align: center;
+        padding: none;
+        border-radius: none;
+        border-width: 30px black;
+    }
+    
+    .yearbtn3 {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 55%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 17.5%;
+        height: 35%;
+        cursor: pointer;
+        text-align: center;
+        padding: none;
+        border-radius: none;
+        border-width: 30px black;
+    }
+    
+    .yearbtn4 {
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 55%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 17.5%;
+        height: 35%;
+        cursor: pointer;
+        text-align: center;
+        padding: none;
+        border-radius: none;
+        border-width: 30px black;
+    }
+    
+    .footer {
+        text-align: center;
+        padding-top: 10px;
+        position: absolute;
+        top: 90%;
+        display: block;
+        background-color: rgb(77, 70, 70);
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 70px;
+    }
+    /*submit button for year1,year2,year3,year4*/
+    
+    .submitbutton {
+        top: 90%;
+        left: 70%;
+        padding: 30px;
+    }
+    
+    .loginbutton {
+        text-decoration: none;
+        margin: 15px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.801);
+        width: 25%;
+        height: 45%;
+        font-size: 125%;
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid rgb(196, 192, 192);
+    }
+    
+    .block {
+        display: block;
+        width: 100%;
+        background-color: white;
+        font-size: small;
+    }
+    
+    #rememberme {
+        display: flex;
+        color: #8a8b8e;
+        float: left;
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 12px;
+    }
+    
+    #forgotpassword {
+        display: flex;
+        padding-right: 17px;
+        float: right;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .signup {
+        font-size: medium;
+        border-bottom: 10px;
+        display: inline-flexbox;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+    }
+    
+    .subbutton {
+        margin-top: 30px;
+        margin: 5px;
+        font-size: 12px;
+        width: 88%;
+        height: 30px;
+        padding: 4px;
+        background-color: green;
+        text-align: center;
+        border-color: green;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .loginbutton #signup {
+        background-color: #eeedf1;
+        color: #8a8b8e;
+        font-size: 12px;
+        width: 110%;
+        padding: 20px 0px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #username {
+        height: 20px;
+    }
+    
+    .loginbutton input[type=text]:focus,
+    .loginbutton input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+    
+    .loginPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 2.5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #999999;
+        z-index: 9;
+        left: 50%;
+        top: 35%;
+    }
+    
+    .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+    }
+    
+    .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: #8ebf42;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+    }
+    
+    .formContainer .cancel {
+        background-color: #cc0000;
+    }
+    
+    .formContainer .btn:hover,
+    .openButton:hover {
+        opacity: 1;
+    }
+    
+    table,
+    td {
+        font-size: 11mm;
+        width: 800px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        border: 3px solid black;
+        border-collapse: collapse;
+        cursor: pointer;
+        width: 90px;
+        background-color: whitesmoke;
+    }
+    
+    td:hover {
+        background-color: #6ba7a7;
+    }
+    
+    .table {
+        width: 80%;
+    }
+    
+    .loginPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #sched {
+        padding-right: 30px;
+        text-align: center;
+    }
+    
+    .tab {
+        text-align: center;
+        background-color: #D6EEEE;
+        border-color: 5px aquamarine;
+        height: 55%;
+        width: 70%;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+        cursor: pointer;
+        padding-top: 30px;
+    }
+    
+    .mdpg {
+        background-color: rgb(77, 77, 255);
+        display: block;
+        text-align: left;
+        position: absolute;
+        right: 0%;
+        width: 16%;
+        height: 25%;
+    }
+    
+    .mod {
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        padding-left: 18px;
+        padding-top: 45px;
+    }
