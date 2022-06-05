@@ -4,11 +4,18 @@
     include 'signpg.php';
 ?>
 
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
+
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style1.css">
         <title>Signup form</title>
     </head>
+
     <body class="header">
         <div class="banner">
             <a href="teacherlogin.php" title="Home"> <img src="images/finalogo.png" width="30%"> </a>
@@ -26,7 +33,7 @@
                 </div>
                 <br>
                 <div>
-                    <input type="text" name="C_password" placeholder="Confirm password" style="font-size: 12px; width: 85%; height: 18px;padding:4px;" required>
+                    <input type="password" name="C_password" placeholder="Confirm password" style="font-size: 12px; width: 85%; height: 18px;padding:4px;" required>
                 </div>
                 <br>
                 <br>
@@ -42,4 +49,5 @@
             <h4>For queries, contact us at +91 94xx xxxx xx</h4>
         </div>
     </body>
-</html>
+
+    </html>
