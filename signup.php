@@ -13,7 +13,7 @@
         <div class="banner">
             <a href="teacherlogin.php" title="Home"> <img src="images/finalogo.png" width="30%"> </a>
         </div>
-        <form style="background-color:white;" method="POST">
+        <form method="POST">
             <div class="loginbutton">
                 <h2>Sign Up</h2>
                 <br>
@@ -31,7 +31,7 @@
                 <br>
                 <br>
                 <div>
-                    <a href="newpage2.php"><input type="submit" name="btn1" id='btn1' value="Submit" class="subbutton"></a>
+                    <a href="signpg.php"><input type="submit" value="Submit" class="subbutton"></a>
                 </div>
             </div>
 

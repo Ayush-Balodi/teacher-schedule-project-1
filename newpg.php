@@ -4,7 +4,6 @@
     $ending_time = "";
     $day = "";
 
-    $id = $_COOKIE["ID"];
     $username = $_COOKIE["Username"];
     $row = "";
 
@@ -28,7 +27,7 @@
         $ending_time = $_POST['Ending_time'];
         $day = $_POST['Day'];
  
-        $sql = "INSERT INTO _teacher_slot (`ID`, `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$id' , '$name' , '$starting_time' , '$ending_time' , '$day')";
+        $sql = "INSERT INTO _teacher_slot ( `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$name' , '$starting_time' , '$ending_time' , '$day')";
         
         if($conn->query($sql) === TRUE ) 
         {
