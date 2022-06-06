@@ -3,6 +3,7 @@
     $username = "";
     $password = "";
     $c_password = "";
+    $sql="";
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -14,31 +15,19 @@
             echo "Password do not match.<br>";
             return;
         }
-    }
+        else
+        {
+            $sql = "INSERT INTO _login_details (`Username`,`Password`) VALUES ('$username','$password')";
+            $result=mysqli_query($conn,$sql);
 
-    echo $username;
-
-    // $row=""; 
-    // $sql = "SELECT Username , Id , Password FROM _login_details";
-    // $result = mysqli_query($conn,$sql);
-    // if(mysqli_num_rows($result) > 0) 
-    // {
-    //     while($row = mysqli_fetch_assoc($result)) 
-    //     {
-    //         if( $username == $row["Username"] )
-    //         {
-    //             echo "Renter username it already exist.";
-    //             return;
-    //         }
-    //     }
-    // }
-    echo $username." " .$password;
-    $sql = "INSERT INTO _login_details ('Username','Password') values($username,$password)";
-    $result = mysqli_query($conn , $sql);
-    if( $result > 0 ){
-        echo "Added";
-    }
-    else{
-        return;
-    }
+            if($result==true) 
+            {
+                echo "Details added to the database successfully.";
+            }
+            else
+            {
+                echo "Addition unsuccessful.".mysqli_error($conn);
+            }
+        }
+    } 
 ?>
