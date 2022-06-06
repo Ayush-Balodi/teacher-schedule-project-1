@@ -38,7 +38,7 @@
                 <br>
                 <br>
                 <div>
-                    <a href="signpg.php"><input type="submit" value="Submit" class="subbutton"></a>
+                    <input type="submit" value="Submit" class="subbutton">
                 </div>
             </div>
 

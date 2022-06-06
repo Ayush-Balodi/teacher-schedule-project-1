@@ -3,6 +3,7 @@
     $username = "";
     $password = "";
     $c_password = "";
+    $sql="";
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -14,15 +15,19 @@
             echo "Password do not match.<br>";
             return;
         }
-    }
+        else
+        {
+            $sql = "INSERT INTO _login_details (`Username`,`Password`) VALUES ('$username','$password')";
+            $result=mysqli_query($conn,$sql);
 
-    $sql = "INSERT INTO _login_details (`Username`,`Password`) VALUES ('$username','$password')";
-
-    if($conn->query($sql) === TRUE ) 
-    {
-        echo "Details added to the database successfully.";
-    }
-    else{
-        echo "Addition unsuccessful.".mysqli_error($conn);
-    }
+            if($result==true) 
+            {
+                echo "Details added to the database successfully.";
+            }
+            else
+            {
+                echo "Addition unsuccessful.".mysqli_error($conn);
+            }
+        }
+    } 
 ?>

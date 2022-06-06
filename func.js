@@ -1,4 +1,5 @@
 function openForm() {
+    $day = document.getElementById("popupForm").innerHTML;
     document.getElementById("popupForm").style.display = "block";
 }
 
