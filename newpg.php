@@ -1,12 +1,15 @@
 <?php
+
+    include 'mysqlll.php';
+
     $name = "";
     $starting_time = "";
     $ending_time = "";
-    $day = "";
 
     $username = $_COOKIE["Username"];
+    $day = "";
+    
     $row = "";
-
     $sql = "SELECT Username , Name FROM _user_to_name";
     $result = mysqli_query($conn,$sql);
 
@@ -14,8 +17,7 @@
     {
         while($row = mysqli_fetch_assoc($result)) 
         {
-          if($row["Username"]==$username)
-          {
+          if($row["Username"]==$username){
             $name = $row["Name"];
           }
         }
@@ -23,11 +25,12 @@
 
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {
+
         $starting_time = $_POST['Starting_time'];
         $ending_time = $_POST['Ending_time'];
-        $day = $_POST['Day'];
+        $day = $_POST['hidden'];
  
-        $sql = "INSERT INTO _teacher_slot ( `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$name' , '$starting_time' , '$ending_time' , '$day')";
+        $sql = "INSERT INTO _teacher_slot ( `Username` , `Name`, `Starting_time`, `Ending_time`, `Day`) VALUES ( '$username' , '$name' , '$starting_time' , '$ending_time' , '$day')";
         
         if($conn->query($sql) === TRUE ) 
         {
