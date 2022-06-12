@@ -1,6 +1,6 @@
-function openForm() {
-    $day = document.getElementById("popupForm").innerHTML;
+function openForm(day) {
     document.getElementById("popupForm").style.display = "block";
+    document.getElementById("hiddenDay").value=day;
 }
 
 function closeForm() {
