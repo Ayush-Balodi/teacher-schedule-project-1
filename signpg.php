@@ -26,7 +26,7 @@
             }
             else
             {
-                echo "Addition unsuccessful.".mysqli_error($conn);
+                echo "Addition unsuccessful : ".mysqli_error($conn);
             }
         }
     } 
