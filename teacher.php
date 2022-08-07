@@ -7,7 +7,7 @@
         $username = $_POST['Username'];
         $password = $_POST['Password'];
         
-        setcookie("Username" , $username , time() + 2 * 24 * 60 * 60 );
+        setcookie("Username" , $username , time() + 86400*30 );
         
         $row=""; 
         $sql = "SELECT Username , Password FROM _login_details";

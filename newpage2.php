@@ -34,7 +34,7 @@
             <br>
             <br>
             <br>
-            <h1 onclick="openTable()">View your schedule for this week</h1>
+            <h1"><a href="display.php">View your schedule for this week</a></h1>
         </div>
     </div>
     <div class="bg">
