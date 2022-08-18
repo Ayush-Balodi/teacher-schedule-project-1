@@ -15,11 +15,11 @@
 	if(mysqli_num_rows($sql2) > 0) 
     {
 		echo "<tr>
-			<th>Name</th>"."    ".
-			" "."<th>Username</th>".
-			" "."<th>Starting Time</th>".
-			" "."<th>Ending Time</th>".
-			" "."<th>Day</th>".
+			<th>Name</th>".
+			"<th>Username</th>".
+			"<th>Starting Time</th>".
+			"<th>Ending Time</th>".
+			"<th>Day</th>".
 			"<br><br>".
 		"<tr>";
         if(mysqli_num_rows($result) > 0) 
@@ -37,21 +37,3 @@
 		echo "You have nothing to view.";
 	}
 ?>
-
-<!-- <table>
-  <tr>
-    <th>Person 1</th>
-    <th>Person 2</th>
-    <th>Person 3</th>
-  </tr>
-  <tr>
-    <td>Emil</td>
-    <td>Tobias</td>
-    <td>Linus</td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td>14</td>
-    <td>10</td>
-  </tr>
-</table> -->
